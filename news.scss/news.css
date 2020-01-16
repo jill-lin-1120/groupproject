@@ -1,5 +1,5 @@
 .container {
-  max-width: 960px;
+  max-width: 920px;
 }
 
 .img {
@@ -7,6 +7,16 @@
 }
 
 .img img {
-  height: 100%;
+  height: 90%;
+  width: 100%;
+}
+
+.img p {
+  margin: 0;
+  font-size: x-small;
+}
+
+.img .text {
+  padding: 0 15px;
 }
 /*# sourceMappingURL=news.css.map */
