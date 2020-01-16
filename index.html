@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <!-- icon's CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+    <title>Hello, world!</title>
+    <style>
+        /* backgroundcolor class */
+        .bgcolor_r {
+            background-color: rgb(229, 35, 45);
+            /* 紅色 */
+        }
+
+        .bgcolor_Beige {
+            background-color: rgb(252, 213, 170);
+            /* 米色 */
+        }
+
+        .bgcolor_dg {
+            background-color: rgb(72, 152, 135);
+            /* 深綠色 */
+        }
+
+        .bgcolor_lg {
+            background-color: rgb(188, 208, 147);
+            /* 淺綠色 */
+        }
+
+        .bgcolor_b {
+            background-color: rgb(30, 43, 88);
+            /* 藍色 */
+        }
+
+        /* textcolor */
+        .color_w {
+            color: white;
+            /* 白色 */
+        }
+
+        .color_r {
+            color: rgb(229, 35, 45);
+            /* 紅色 */
+        }
+
+        .color_Beige {
+            color: rgb(252, 213, 170);
+            /* 米色 */
+        }
+
+        .color_dg {
+            color: rgb(72, 152, 135);
+            /* 深綠色 */
+        }
+
+        .color_lg {
+            color: rgb(188, 208, 147);
+            /* 淺綠色 */
+        }
+
+        .color_b {
+            color: rgb(30, 43, 88);
+            /* 藍色 */
+        }
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            /* line-height: 0; */
+
+        }
+
+        h2 {
+            font-size: 57px;
+            line-height: 0.7;
+            padding-top: 57px;
+        }
+
+
+
+        /* nav */
+        nav {
+            width: 100vw;
+            height: 65px;
+        }
+
+        .nav-item {
+            color: white;
+        }
+
+        /* banner */
+        .banner {
+            margin-top: 65px;
+        }
+
+        .banner .swiper-wrapper {
+            height: 100%;
+            width: 100%;
+        }
+
+        .banner .swiper-slide {
+            width: 100%;
+
+        }
+
+        .arrow_down {
+            margin: 0 auto;
+        }
+
+
+        /* section_2 */
+
+        .section_2 p {
+            text-align: justify;
+            line-height: 30px;
+        }
+
+        .section_2_border {
+            border-top: 1px solid white;
+            padding: 10px;
+            width: 40%;
+        }
+
+        .section2_top_img {
+            width: 90%;
+        }
+
+        .section2_btm_img {
+            width: 73%;
+        }
+
+
+        .col_padding {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .col_padding_img {
+            margin: auto;
+        }
+
+
+        /* footer */
+        .foot_top{
+            height: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <!-- 1.nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top bgcolor_r">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand " href="#">
+                    <img class="logo" src="/logo-new.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav color_w">
+                        <a class="nav-item nav-link active" href="#" style="color: white;">關於我們 <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link " href="#" style="color: white;">產品介紹</a>
+                        <a class="nav-item nav-link" href="#" style="color: white;">最新消息</a>
+                        <a class="nav-item nav-link" href="#" style="color: white;">聯絡我們</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 2.banner -->
+        <div class="banner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/img/banner.jpg" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="/img/banner.jpg" alt="" width="100%"></div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- arrow down -->
+        <!-- <div class="arrow_down">
+            <a href="" class="icon-arrow-down"></a>
+        </div> -->
+        <!-- 3.main -->
+        <main>
+            <!-- section_2 -->
+            <section class="section_2 bgcolor_b">
+                <div class="container">
+                    <h2 class="title color_Beige">品牌故事</h2>
+                    <h6 class="color_Beige">司康鬆餅最早起源地是葡萄牙</h6>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col_padding_img">
+                            <img class="section2_top_img" src="/img/main_section2_top.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 col_padding color_w">
+                            <p>司康鬆餅最早起源地是葡萄牙，隨著大航海時代
+                                的來臨傳入英國，最先被貴族使用，因平民化而
+                                發揚，故有英式葡萄司康鬆餅之稱，簡稱「司康
+                                鬆餅」、又稱為「英式鬆餅、奶油小圓餅、奶油
+                                小麵包」，是一種介於蛋糕與快速麵包之間口感
+                                的英式點心，可作為輕食或者甜點食用</p>
+                        </div>
+
+                        <div class="container">
+                            <div class="section_2_border"></div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col_padding color_w">
+                            <p>司康鬆餅最早起源地是葡萄牙，隨著大航海時代的來臨傳
+                                入英國，最先被貴族使用，因平民化而發揚，故有英式葡
+                                萄司康鬆餅之稱，簡稱「司康鬆餅」、又稱為「英式鬆餅
+                                、奶油小圓餅、奶油小麵包」，是一種介於蛋糕與快速麵
+                                包之間口感的英式點心，可作為輕食或者甜點食用
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col_padding_img">
+                            <img class="section2_btm_img" src="/img/main_section2_bottom.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+
+        <!-- 7.footer -->
+        <footer>
+            <footer class="footer  color_w text-center">
+                <div class="foot_top bgcolor_r">
+                    
+                </div>
+                <div class=" footer_container bgcolor_b">
+
+                    <div >
+                        <p class="">
+                            英。司康 IN。SCON
+                        </p>
+                        <p class=" color_Beige">
+                            <small>地址:台中市西屯區大祥路142號8樓之2 <br>
+                                客服專線:0000000000<br>
+                                c版權聲明</small>
+                        </p>
+
+                    </div>
+                </div>
+            </footer>
+
+        </footer>
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <!-- swiper's JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        <!-- jquery -->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+
+        <!-- Initialize Swiper -->
+        <script>
+
+            //  banner swiper
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+
+
+
+
+
+
+        </script>
+</body>
+
+</html>
