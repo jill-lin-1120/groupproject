@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,SAAS,EAAE,KAAK;CACnB;;AACD,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,IAAI;CAIf;;AALD,AAEI,IAFA,CAEA,GAAG,CAAA;EACC,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "news.scss"
+    ],
+    "names": [],
+    "file": "news.css"
+}

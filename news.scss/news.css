@@ -1,0 +1,12 @@
+.container {
+  max-width: 960px;
+}
+
+.img {
+  height: 35vh;
+}
+
+.img img {
+  height: 100%;
+}
+/*# sourceMappingURL=news.css.map */
