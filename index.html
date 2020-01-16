@@ -12,7 +12,7 @@
     <!-- swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <!-- icon's CSS -->
-    
+
 
     <title>Hello, world!</title>
     <style>
@@ -124,39 +124,17 @@
 
 
         /* section_1 */
-        .section_1{
-            background-image: url();
+
+
+
+        .section_1_house {
+            position: relative;
+            top: -60px;
+            z-index: 9;
         }
 
-        .section_1 p {
-            text-align: justify;
-            line-height: 30px;
-        }
-
-        .section_1_border {
-            border-top: 1px solid white;
-            padding: 10px;
-            width: 40%;
-        }
-
-        .section1_top_img {
-            width: 90%;
-        }
-
-        .section1_btm_img {
-            width: 73%;
-        }
-
-
-        .col_padding {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            text-align: center;
-        }
-
-        .col_padding_img {
-            margin: auto;
+        .bgcolor_b {
+            margin: -107px;
         }
 
 
@@ -169,55 +147,57 @@
 </head>
 
 <body>
-    <div id="all">
-        <!-- 1.nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-light  navbar-fixed-top bgcolor_r">
-            <div class="container">
-                <!-- logo -->
-                <a class="navbar-brand " href="#">
-                    <img class="logo" src="/img/01-index/NavLogo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav color_w">
-                        <a class="nav-item nav-link active" href="#" style="color: white;">關於我們 <span
-                                class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link " href="#" style="color: white;">產品介紹</a>
-                        <a class="nav-item nav-link" href="#" style="color: white;">最新消息</a>
-                        <a class="nav-item nav-link" href="#" style="color: white;">聯絡我們</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
 
-        <!-- 2.banner -->
-        <div class="banner">
-            <!-- Swiper -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
-                    <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
+    <!-- 1.nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light  navbar-fixed-top bgcolor_r">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand " href="#">
+                <img class="logo" src="/img/01-index/NavLogo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav color_w">
+                    <a class="nav-item nav-link active" href="#" style="color: white;">關於我們 <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link " href="#" style="color: white;">產品介紹</a>
+                    <a class="nav-item nav-link" href="#" style="color: white;">最新消息</a>
+                    <a class="nav-item nav-link" href="#" style="color: white;">聯絡我們</a>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
             </div>
         </div>
+    </nav>
 
-        <!-- 3.main -->
-        <main>
-            <!-- 3-1 品牌故事section_1 -->
-            <section class="section_1">
-                <div class="container">
+    <!-- 2.banner -->
+    <div class="banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
+                <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- 3.main -->
+    <main>
+        <!-- 3-1 品牌故事section_1 -->
+        <section class="section_1">
+            <img class="section_1_house col-6" src="/img/01-index/02-品牌故事/house.png" alt="">
+            <div class=" bgcolor_b">
+                <div class="container ">
                     <h2 class="title color_Beige">品牌故事</h2>
                     <h6 class="color_Beige">司康鬆餅最早起源地是葡萄牙</h6>
                     <div class="row">
                         <div class="col-12 col-md-6 col_padding_img">
-                            <img class="section1_top_img" src="/img/01-index/02-品牌故事/box.png" alt="">
+                            
                         </div>
                         <div class="col-12 col-md-6 col_padding color_w">
                             <p>司康鬆餅最早起源地是葡萄牙，隨著大航海時代
@@ -228,78 +208,80 @@
                                 的英式點心，可作為輕食或者甜點食用</p>
                         </div>
                     </div>
-                    
                 </div>
-            </section>
-
-        </main>
 
 
+            </div>
+        </section>
 
-        <!-- 7.footer -->
-        <footer>
-            <footer class="footer  color_w text-center">
-                <div class="foot_top bgcolor_r">
+    </main>
+
+
+
+    <!-- 7.footer -->
+    <footer>
+        <footer class="footer  color_w text-center">
+            <div class="foot_top bgcolor_r">
+
+            </div>
+            <div class=" footer_container bgcolor_b">
+
+                <div>
+                    <p class="">
+                        英。司康 IN。SCON
+                    </p>
+                    <p class=" color_Beige">
+                        <small>地址:台中市西屯區大祥路142號8樓之2 <br>
+                            客服專線:0000000000<br>
+                            c版權聲明</small>
+                    </p>
 
                 </div>
-                <div class=" footer_container bgcolor_b">
-
-                    <div>
-                        <p class="">
-                            英。司康 IN。SCON
-                        </p>
-                        <p class=" color_Beige">
-                            <small>地址:台中市西屯區大祥路142號8樓之2 <br>
-                                客服專線:0000000000<br>
-                                c版權聲明</small>
-                        </p>
-
-                    </div>
-                </div>
-            </footer>
-
+            </div>
         </footer>
 
+    </footer>
 
 
 
 
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-            crossorigin="anonymous"></script>
-        <!-- swiper's JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-        <!-- jquery -->
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- swiper's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
 
-        <!-- Initialize Swiper -->
-        <script>
+    <!-- Initialize Swiper -->
+    <script>
 
-            //  banner swiper
-            var swiper = new Swiper('.swiper-container', {
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-            });
-
-
+        //  banner swiper
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
 
 
 
 
 
-        </script>
+
+
+    </script>
 </body>
 
 </html>
