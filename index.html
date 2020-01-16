@@ -11,6 +11,7 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
     <!-- icon's CSS -->
 
 
@@ -131,10 +132,11 @@
             position: relative;
             top: -60px;
             z-index: 9;
+            left: -15px;
         }
 
-        .bgcolor_b {
-            margin: -107px;
+        .section_1_content {
+            margin-top: -107px;
         }
 
 
@@ -180,9 +182,11 @@
                 <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
                 <div class="swiper-slide">Slide 3</div>
                 <div class="swiper-slide">Slide 4</div>
+
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 
@@ -191,13 +195,13 @@
         <!-- 3-1 品牌故事section_1 -->
         <section class="section_1">
             <img class="section_1_house col-6" src="/img/01-index/02-品牌故事/house.png" alt="">
-            <div class=" bgcolor_b">
+            <div class="section_1_content bgcolor_b">
                 <div class="container ">
                     <h2 class="title color_Beige">品牌故事</h2>
                     <h6 class="color_Beige">司康鬆餅最早起源地是葡萄牙</h6>
                     <div class="row">
                         <div class="col-12 col-md-6 col_padding_img">
-                            
+
                         </div>
                         <div class="col-12 col-md-6 col_padding color_w">
                             <p>司康鬆餅最早起源地是葡萄牙，隨著大航海時代
@@ -261,17 +265,16 @@
         crossorigin="anonymous"></script>
     <!-- swiper's JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <!-- jquery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+
 
     <!-- Initialize Swiper -->
     <script>
 
         //  banner swiper
         var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
 
