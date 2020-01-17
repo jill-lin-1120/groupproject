@@ -134,33 +134,83 @@
         /* 01-商品展示頁面 */
 
         /* 02-獨立商品modal */
-        .modal-header{
+        .modal-bg{
+            background-image: url(./img/04-購物頁面/02-modal/shopping_bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .modal-header {
             border-bottom: none;
         }
-        .modal-footer{
+
+        .modal-footer {
             border-top: none;
         }
-        .modal-title{
+
+        .modal-title {
             font-size: 50px;
-            
+
         }
-        .modal-title-border{
+
+        .modal-title-border {
             width: 450px;
             border-bottom: 1px solid rgb(229, 35, 45);
             margin-top: -5px;
             margin-bottom: 40px;
         }
-        .modal-body{
+
+        .modal-body {
             padding: 0;
         }
-        .modal-body p{
+
+        .modal-body p {
             font-size: 25px;
             letter-spacing: 4px;
         }
-       .modal-footer button{
-        font-size: 25px;
-        letter-spacing: 3px;
-       }
+
+        .modal-footer button {
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+
+        .qty_btn {
+            border: none;
+            background-color: transparent;
+
+        }
+
+        .qty {
+            font-size: 42px;
+            text-align: center;
+            width: 65px;
+            border: 1px solid gray;
+        }
+
+        .qtyplus {
+            font-size: 50px;
+        }
+
+        .qtyminus {
+            font-size: 60px;
+            margin-left: 70px;
+        }
+
+        .btn_buy {
+            width: 150px;
+            letter-spacing: 2px;
+            font-size: 24px;
+            align-self: flex-end;
+            margin-bottom: 50px;
+        }
+        input{
+            margin-bottom: 35px;
+            
+        }
+        label{
+            display: block;
+            margin-bottom: -35px;
+        }
 
 
 
@@ -193,7 +243,7 @@
         <div class="container">
             <!-- logo -->
             <a class="navbar-brand " href="#">
-                <img class="logo" src="/img/01-index/NavLogo.png" alt="">
+                <img class="logo" src="./img/01-index/nav-logo with name.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -222,8 +272,8 @@
         aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content d-flex flex-row">
-                <div class="col-6 " style="padding-left: 0px;">
-                    <img src="./img/04-購物頁面/shopping_bg.png" alt="" style="width: 100%; height: 100%;">
+                <div class="col-6 modal-bg d-flex justify-content-center align-items-center" style="padding-left: 0px;">
+                   <img class="modal-img" src="./img/04-購物頁面/02-modal/原味.png" alt="">
                 </div>
                 <div class="col-6">
                     <!-- modal關閉的按鈕 -->
@@ -232,7 +282,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            
+
                         </div>
                         <div class="modal-body">
 
@@ -240,7 +290,7 @@
                             <div class="modal-title-border"></div>
                             <p>外層酥脆，內層濕潤鬆軟，扎實的口感，彷彿置身英國，品嚐正統的英式下午茶點心，享受午后悠閒時光。</p>
                             <p>成&emsp;&emsp;分：中筋麵粉、牛奶、雞蛋</p>
-                            
+
                             <p>營養標示：</p>
                             <p>&emsp;&emsp;&emsp;&emsp;熱量&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;大卡</p>
                             <p>&emsp;&emsp;&emsp;&emsp;蛋白質&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克</p>
@@ -248,13 +298,25 @@
                             <p>&emsp;&emsp;&emsp;&emsp;糖&emsp;&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克</p>
                             <p>&emsp;&emsp;&emsp;&emsp;鈉&emsp;&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;毫克</p>
 
-                            <p>數量：</p>
-                            <input type="number" name="" id="">
+
+                            <div class="d-flex justify-content-around">
+                                <!-- 加減按鈕 -->
+                                <form id='myform' method='POST' action='#'>
+                                    <label >
+                                        <p>數量：</p>
+                                    </label>
+                                    <input type='button' value='-' class='qty_btn qtyminus' field='quantity' />
+                                    <input type='text' name='quantity' value='0' class='qty' />
+                                    <input type='button' value='+' class='qty_btn qtyplus' field='quantity' />
+                                </form>
+                                <button type="button" class="btn btn_buy bgcolor_r color_w">立即購買</button>
+                            </div>
+
+
+
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-lg bgcolor_r color_w">立即購買</button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -317,6 +379,44 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+        });
+
+        // 數量加減按鈕
+        $(function () {
+            // This button will increment the value
+            $('.qtyplus').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If is not undefined
+                if (!isNaN(currentVal)) {
+                    // Increment
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+            // This button will decrement the value till 0
+            $(".qtyminus").click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If it isn't undefined or its greater than 0
+                if (!isNaN(currentVal) && currentVal > 0) {
+                    // Decrement one
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
         });
 
 
