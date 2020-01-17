@@ -78,6 +78,7 @@
 
         * {
             box-sizing: border-box;
+            font-family: Microsoft JhengHei;
         }
 
         body {
@@ -91,8 +92,17 @@
             line-height: 0.7;
             padding-top: 57px;
         }
-        .arrow_down{
+
+        .arrow_down {
             width: 80px;
+        }
+
+        .title {
+            font-size: 60px;
+        }
+
+        .subtitle {
+            font-size: 20px;
         }
 
 
@@ -103,17 +113,23 @@
             height: 65px;
         }
 
-        .navbar .container {
+        /* .navbar .container {
             max-width: 820px;
-        }
+        } */
 
         .nav-item {
             color: white;
+            font-size: 20px;
         }
 
-        @media screen and (max-width: 996px) {
+        @media screen and (max-width: 992px) {
             nav {
                 height: 85px;
+            }
+
+            .nav-link {
+
+                font-weight: bold;
             }
         }
 
@@ -149,9 +165,32 @@
         }
 
         .section_1_content {
-            margin-top: -113px;
+            padding-left: 40px;
+            margin-top: -142px;
             position: relative;
             padding-bottom: 40px;
+            z-index: 10;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .section_1_content {
+                margin-top: -113px;
+            }
+        }
+
+        @media screen and (max-width: 996px) {
+            .section_1_content {
+                margin-top: -101px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .section_1_content {
+            margin-top: -50px;
+            }
+            .section_1_house {
+            top: -35px;
+            }
         }
 
         .section_1 {
@@ -159,22 +198,37 @@
         }
 
         .section_1 h2 {
-            font-size: 45px;
             line-height: 0.7;
             padding: 57px 0 0 0px;
         }
 
         .section_1 h6 {
-            font-size: 15px;
             line-height: 0.7;
             padding: 20px 0 10px 0px;
             letter-spacing: 5px;
         }
 
         .section_1 p {
-            font-size: 16px;
+            font-size: 35px;
             letter-spacing: 2.5px;
-            line-height: 2.2;
+            padding-right: 200px;
+        }
+        @media screen and (max-width: 1280px) {
+            .section_1 p {
+            padding-right: 120px;
+        }
+        }
+
+        @media screen and (max-width: 996px) {
+            .section_1 p {
+            padding-right: 60px;
+        }
+        }
+
+        @media screen and (max-width: 576px) {
+            .section_1 p {
+            padding-right: 0px;
+        }
         }
 
         .story_image img {
@@ -200,12 +254,20 @@
 
         /* footer */
         .foot_top {
-            height: 10px;
+            height: 14px;
             width: 100%;
         }
 
         .footer_content {
-            padding-top: 30px;
+            padding-top: 50px;
+            padding-bottom: 45px;
+        }
+
+        .footer_content p {
+            font-size: 24px;
+            padding-top: 20px;
+            letter-spacing: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -225,11 +287,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav color_w">
-                    <a class="nav-item nav-link active" href="#" style="color: white;">關於我們 <span
+                    <a class="nav-item nav-link active" href="#" style="color: white; padding-left: 70px;">關於我們 <span
                             class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link " href="#" style="color: white;">產品介紹</a>
-                    <a class="nav-item nav-link" href="#" style="color: white;">最新消息</a>
-                    <a class="nav-item nav-link" href="#" style="color: white;">聯絡我們</a>
+                    <a class="nav-item nav-link " href="#" style="color: white;  padding-left: 70px;">產品介紹</a>
+                    <a class="nav-item nav-link" href="#" style="color: white;  padding-left: 70px;">最新消息</a>
+                    <a class="nav-item nav-link" href="#" style="color: white;  padding-left: 70px;">聯絡我們</a>
                 </div>
             </div>
         </div>
@@ -258,23 +320,29 @@
         <section class="section_1">
             <img class="section_1_house col-6" src="/img/01-index/02-品牌故事/house.png" alt="">
             <div class="section_1_content bgcolor_b">
-                <div class="container">
-                    <h2 class="title color_Beige">品牌 故事</h2>
-                    <h6 class="color_Beige">司康鬆餅最早起源地是葡萄牙</h6>
-                    <div class="row">
-                        <div class="story_image col-12 col-md-6">
-                            <img class="section1_top_img" src="./img/02-關於我們/01-品牌故事/01-box.png" alt="">
-                        </div>
-                        <div class="col-12 col-md-6 color_w">
-                            <p>旅居英國近三十年，將英式傳統下午茶風味引進台灣。堅持以純手工打造的英式下午茶點心。灰色調倫敦天氣，典雅的飲茶文化，講話有讓人羨慕的英式口音的台灣店長熱情待人友善也注重禮儀，特別喜歡與朋友們分享親手烹調的美食、生活大小故事，重視與家人好友聚在一起的時光。
-                            </p>
-                        </div>
-                    </div>
 
+                <h2 class="title color_Beige">品牌 故事</h2>
+                <h6 class="subtitle color_Beige">司康鬆餅最早起源地是葡萄牙</h6>
+                <div class="row">
+                    <div class="story_image col-11 col-md-4">
+                        <img class="section1_top_img" src="./img/02-關於我們/01-品牌故事/01-box.png" alt="">
+                    </div>
+                    <div class="col-11 col-md-7 color_w">
+                        <p>旅居英國近三十年，將英式傳統下午茶風味引進台灣。堅持以純手工打造的英式下午茶點心。灰色調倫敦天氣，典雅的飲茶文化，講話有讓人羨慕的英式口音的台灣店長熱情待人友善也注重禮儀，特別喜歡與朋友們分享親手烹調的美食、生活大小故事，重視與家人好友聚在一起的時光...
+                            <a href="">
+                                < more >
+                            </a>
+                        </p>
+
+                    </div>
                 </div>
 
+
+
                 <div class="scroll_down">
-                    <img class="arrow_down" src="./img/01-index/02-品牌故事/down.png" alt="">
+                    <a href="">
+                        <img class="arrow_down" src="./img/01-index/02-品牌故事/down.png" alt="">
+                    </a>
                 </div>
                 <img class="section_1_flower" src="./img/01-index/02-品牌故事/品牌flower-01.png" alt="">
 
@@ -300,9 +368,9 @@
                         英。司康 IN。SCON
                     </p>
                     <p class=" color_Beige">
-                        <small>地址:台中市西屯區大祥路142號8樓之2 <br>
-                            客服專線:0000000000<br>
-                            c版權聲明</small>
+                        <small style="
+                        font-size: 21px;padding-top: 20px;">地址:台中市西屯區大祥路142號8樓之2 <br>
+                            客服專線:0000000000<br></small>
                     </p>
 
                 </div>
