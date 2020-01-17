@@ -31,5 +31,9 @@
 }   
 .feather{
     display: flex;
-
+    .text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
