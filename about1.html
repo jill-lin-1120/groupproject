@@ -101,6 +101,7 @@
 
             .nav-item {
                 color: white;
+                font-size: 20px;
             }
 
 
@@ -176,13 +177,15 @@
 
             .scroll_down {
                 text-align: center;
-                padding: 0 0 80px 0;
+                padding: 20px 0 80px 0;
             }
 
-            .fa-angle-down {
-                font-size: 80px;
-                color: white;
+            .scroll_down img {
+                width: 8%;
             }
+
+
+
 
             /* section-3 */
             .section_3 {
@@ -389,14 +392,26 @@
             }
         }
 
+        @media screen and (max-width: 992px) {
+            nav {
+                height: 85px;
+            }
+
+            .nav-link {
+
+                font-weight: bold;
+            }
+        }
+
         @media screen and (max-width: 768px) {
             .background_image_L {
                 position: absolute;
                 left: -142px;
                 top: 564px;
             }
+
             .background_image_R {
-                display:none;
+                display: none;
             }
 
         }
@@ -409,7 +424,7 @@
             }
 
             .background_image_R {
-                display:block;
+                display: block;
                 position: absolute;
                 right: -136px;
                 top: 638px;
@@ -420,8 +435,20 @@
 
         /* footer */
         .foot_top {
-            height: 8px;
+            height: 14px;
             width: 100%;
+        }
+
+        .footer_content {
+            padding-top: 50px;
+            padding-bottom: 45px;
+        }
+
+        .footer_content p {
+            font-size: 24px;
+            padding-top: 20px;
+            letter-spacing: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -433,7 +460,7 @@
         <div class="container">
             <!-- logo -->
             <a class="navbar-brand " href="#">
-                <img class="logo" src="/img/01-index/NavLogo.png" alt="">
+                <img class="logo" src="./img/01-index/nav-logo with name.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -441,11 +468,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav color_w">
-                    <a class="nav-item nav-link active" href="#" style="color: white;">關於我們 <span
+                    <a class="nav-item nav-link active" href="#" style="color: white; padding-left: 70px;">關於我們 <span
                             class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link " href="#" style="color: white;">產品介紹</a>
-                    <a class="nav-item nav-link" href="#" style="color: white;">最新消息</a>
-                    <a class="nav-item nav-link" href="#" style="color: white;">聯絡我們</a>
+                    <a class="nav-item nav-link " href="#" style="color: white;  padding-left: 70px;">產品介紹</a>
+                    <a class="nav-item nav-link" href="#" style="color: white;  padding-left: 70px;">最新消息</a>
+                    <a class="nav-item nav-link" href="#" style="color: white;  padding-left: 70px;">聯絡我們</a>
                 </div>
             </div>
         </div>
@@ -490,7 +517,7 @@
                     </div>
                 </div>
                 <div class="scroll_down">
-                    <a href="#section_3"><i class="fas fa-angle-down"></i></a>
+                    <a href="#section_3"> <img class="arrow_down" src="./img/01-index/02-品牌故事/down.png" alt=""></a>
                 </div>
             </div>
         </section>
@@ -524,25 +551,27 @@
         </section>
     </main>
 
+
     <!-- 7.footer -->
     <footer>
         <footer class="footer  color_w text-center">
-            <div class="foot_top bgcolor_r"></div>
+            <div class="foot_top bgcolor_r">
+            </div>
             <div class=" footer_container bgcolor_b">
-                <div>
-                    <p>
+                <div class="footer_content">
+                    <p class="">
                         英。司康 IN。SCON
                     </p>
-                    <p class="color_Beige">
-                        <small>地址:台中市西屯區大祥路142號8樓之2 <br>
-                            客服專線:0000000000<br>
-                            c版權聲明</small>
+                    <p class=" color_Beige">
+                        <small style="
+                        font-size: 21px;padding-top: 20px;">地址:台中市西屯區大祥路142號8樓之2 <br>
+                            客服專線:0000000000<br></small>
                     </p>
                 </div>
             </div>
         </footer>
-
     </footer>
+
 
 
 
