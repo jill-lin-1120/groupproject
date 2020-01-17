@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- icon's CSS -->
 
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <title>Hello, world!</title>
     <style>
@@ -41,6 +44,11 @@
         .bgcolor_b {
             background-color: rgb(30, 43, 88);
             /* 藍色 */
+        }
+
+        .bgcolor_bg {
+            background-color: rgb(51, 51, 51);
+            /* 黑灰 */
         }
 
         /* textcolor */
@@ -251,6 +259,102 @@
             bottom: 0;
         }
 
+        /* section_2 */
+
+        .section_2_contain {
+            padding-top: 20px;
+            font-size: 60px;
+        }
+
+        .section_2_LM {
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        .section_2 p {
+            /* text-decoration: underline; */
+            margin: 0;
+        }
+
+
+        .text_line {
+            width: 270px;
+            height: 1px;
+            background-color: white;
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+        }
+
+        /* section_3 */
+        .section_3 {
+            font-size: 60px;
+            padding: 30px 0;
+            padding-left: 30px;
+        }
+
+        .section_3_title {
+            padding: 150px 70px;
+            padding-right: 0px;
+        }
+
+        .section_3_title p {
+            line-height: 80px;
+        }
+
+        .section_3_img{
+            position: relative;
+        }
+
+        .section_3_img p{
+            font-size: 40px;
+        }
+
+        .img_box {
+            width: 100%;
+            /* position: relative; */
+            clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+            z-index: 1;
+        }
+
+        .img_box02 {
+            width: 100%;
+            clip-path: polygon(50% 0, 100% 0%, 100% 100%, 33% 100%);
+            z-index: 2;
+            /* position: relative; */
+
+        }
+
+        .img_box03 {
+            width: 100%;
+            clip-path: polygon(80% 0, 100% 0%, 100% 100%, 65% 100%);
+            z-index: 3;
+        }
+
+        .img_product01 {
+            width: 20%;
+            position: absolute;
+            top: 25%;
+            left: 8%;
+            z-index: 5;
+        }
+
+        .img_product02 {
+            width: 220px;
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            z-index: 5;
+        }
+
+        .img_product03{
+            width: 420px;
+            position: absolute;
+            top: 5%;
+            left: 63%;
+            z-index: 5;
+        }
+
 
         /* footer */
         .foot_top {
@@ -279,7 +383,7 @@
         <div class="container">
             <!-- logo -->
             <a class="navbar-brand " href="#">
-                <img class="logo" src="/img/01-index/NavLogo.png" alt="">
+                <img class="logo" src="./img/01-index/nav-logo with name.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -302,8 +406,8 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
-                <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
+                <div class="swiper-slide"><img src="./img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
+                <div class="swiper-slide"><img src="./img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
                 <div class="swiper-slide">Slide 3</div>
                 <div class="swiper-slide">Slide 4</div>
 
@@ -318,7 +422,7 @@
     <main>
         <!-- 3-1 品牌故事section_1 -->
         <section class="section_1">
-            <img class="section_1_house col-6" src="/img/01-index/02-品牌故事/house.png" alt="">
+            <img class="section_1_house col-6" src="./img/01-index/02-品牌故事/house.png" alt="">
             <div class="section_1_content bgcolor_b">
 
                 <h2 class="title color_Beige">品牌 故事</h2>
@@ -348,6 +452,76 @@
 
 
 
+            </div>
+        </section>
+
+        <!-- 3-2 食用巧思section_2 -->
+        <section class="section_2 bgcolor_dg color_w">
+            <div class=" section_2_contain">
+                <div class="row">
+                    <div class="col-9 d-flex section_2_LM">
+                        <div class="col-5">
+                            <div>
+                                <p class="d-flex justify-content-center">食用&nbsp;巧思</p>
+                                <div class="text_line"></div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <img width="80%" src="./img/01-index/03-食用巧思/cake.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-7 d-flex align-items-center">
+                            <div class="section_2_M d-flex justify-content-first align-items-end">
+                                <img width="90%" src="./img/01-index/03-食用巧思/食用流程.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-end">
+                        <div class="section_2_R d-flex justify-content-end align-items-end">
+                            <img width="110%" src="./img/01-index/03-食用巧思/食用插圖.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-2 銷售商品section_3 -->
+        <section class="section_3">
+            <div class="h-100">
+                <div class="d-flex justify-content-between h-100">
+                    <div class=" section_3_title flex-grow-1">
+                        <!-- flex-grow-1 -->
+                        <p class="">銷售&nbsp;商品 <br>Our&nbsp;Products</p>
+                    </div>
+
+                    <div class="d-flex section_3_img w-100">
+
+                        <div class="img_product01" data-aos="fade-left" data-aos-delay="1000" data-aos-anchor-placement="center-center">
+                            <img width="100%" src="./img/01-index/04-銷售商品/01-產品.png" alt="">
+                        </div>
+                        <div class="img_product02 color_w" data-aos="fade-left" data-aos-delay="2000" data-aos-anchor-placement="top-center">
+                            <img width="100%" src="./img/01-index/04-銷售商品/02-產品.png" alt="">
+                            <p>果醬的魅力</p>
+                        </div>
+
+                        <div class="img_product03 color_w d-flex flex-wrap justify-content-center" data-aos="fade-left" data-aos-delay="3000" data-aos-anchor-placement="top-center">
+                            <p>濃郁花茶香</p>
+                            <img width="100%" src="./img/01-index/04-銷售商品/03-產品.png" alt="">
+                        </div>
+
+
+                        <div class="img_box bgcolor_b" data-aos="fade-left" data-aos-delay="100000" data-aos-anchor-placement="top-center">
+                            
+                            <div class="img_box02 bgcolor_r h-100" data-aos="fade-left" data-aos-delay="100000" data-aos-anchor-placement="top-center">
+                                <div class="img_box03 bgcolor_bg h-100" data-aos="fade-left" data-aos-delay="100000" data-aos-anchor-placement="top-center">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -398,6 +572,10 @@
         crossorigin="anonymous"></script>
     <!-- swiper's JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 
     <!-- Initialize Swiper -->

@@ -15,7 +15,7 @@
     <!-- icon's CSS -->
 
 
-    <title>Hello, world!</title>
+    <title>購物頁面</title>
     <style>
         /* backgroundcolor class */
         .bgcolor_r {
@@ -145,9 +145,22 @@
             
         }
         .modal-title-border{
-            width: 50px;
+            width: 450px;
             border-bottom: 1px solid rgb(229, 35, 45);
+            margin-top: -5px;
+            margin-bottom: 40px;
         }
+        .modal-body{
+            padding: 0;
+        }
+        .modal-body p{
+            font-size: 25px;
+            letter-spacing: 4px;
+        }
+       .modal-footer button{
+        font-size: 25px;
+        letter-spacing: 3px;
+       }
 
 
 
@@ -210,7 +223,7 @@
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content d-flex flex-row">
                 <div class="col-6 " style="padding-left: 0px;">
-                    <img src="./img/04-購物頁面/shopping_bg.png" alt="" style="width: 100%;">
+                    <img src="./img/04-購物頁面/shopping_bg.png" alt="" style="width: 100%; height: 100%;">
                 </div>
                 <div class="col-6">
                     <!-- modal關閉的按鈕 -->
@@ -226,18 +239,21 @@
                             <h3 class="modal-title color_r ">經典原味</h3>
                             <div class="modal-title-border"></div>
                             <p>外層酥脆，內層濕潤鬆軟，扎實的口感，彷彿置身英國，品嚐正統的英式下午茶點心，享受午后悠閒時光。</p>
-                            <p>成&nbsp;分:</p>
-                            <p>中筋麵粉、牛奶、雞蛋</p>
-                            <p>營養標示:</p>
-                            <p>熱量0000大卡</p>
-                            <p>蛋白質0000公克</p>
-                            <p>脂肪0000公克</p>
-                            <p>糖0000公克</p>
-                            <p>鈉0000毫克</p>
+                            <p>成&emsp;&emsp;分：中筋麵粉、牛奶、雞蛋</p>
+                            
+                            <p>營養標示：</p>
+                            <p>&emsp;&emsp;&emsp;&emsp;熱量&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;大卡</p>
+                            <p>&emsp;&emsp;&emsp;&emsp;蛋白質&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克</p>
+                            <p>&emsp;&emsp;&emsp;&emsp;脂肪&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克</p>
+                            <p>&emsp;&emsp;&emsp;&emsp;糖&emsp;&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克</p>
+                            <p>&emsp;&emsp;&emsp;&emsp;鈉&emsp;&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;毫克</p>
+
+                            <p>數量：</p>
+                            <input type="number" name="" id="">
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger btn-lg">立即購買</button>
+                        <button type="button" class="btn btn-lg bgcolor_r color_w">立即購買</button>
                     </div>
                 </div>
             </div>
