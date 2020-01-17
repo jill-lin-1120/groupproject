@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <!-- icon's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+      <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>關於我們</title>
 
     <style>
@@ -77,7 +79,7 @@
 
         * {
             box-sizing: border-box;
-            font-family: 微軟正黑體
+            font-family: 微軟正黑體;
         }
 
         body {
@@ -182,6 +184,11 @@
 
             .scroll_down img {
                 width: 8%;
+            }
+
+            .scroll_down a {
+                -webkit-transition: all .5s ease-in 3s;
+                transition: all .5s ease-in 3s;
             }
 
 
@@ -502,14 +509,13 @@
             <div class="container">
                 <div class="section_2_content row">
                     <div class="text col-xl-8 col-md-8 col-sm-8">
-                        <div class="mask color_w">
+                        <div class="mask color_w"> 
                             <p>懂得生活，就從體驗花園裡喝下午茶的閒情雅趣開始~~
                                 聞名世界的小說、歌劇，街頭藝人表演到處蘊含著藝術，就想坐靜靜下來閱讀一本自己愛的書；在野餐巾上，一壺熱茶加上道地司康（scone），暖暖的香味和扎實的口感，更不可缺少她的好partner英國德文郡製造的濃郁毫不油膩奶油醬（clotted
                                 cream)，平凡滿足的幸福~~貴族的生活往往就是這麼樸實無華且優雅。
                             </p>
-                            <p>英司康(Inscone) since 2013.</p>
+                            <p> 英司康(Inscone) since 2013.</p >
                             <p>目前以司康（scone）﹑德文郡奶油（clotted cream）為主要明星產品。兼營英國骨董瓷器。</p>
-
                         </div>
                     </div>
                     <div class="story_image2 col-xl-4 col-md-4 col-sm-4 col-8">
@@ -590,6 +596,22 @@
         crossorigin="anonymous"></script>
     <!-- swiper's JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        // // scroll down smooth
+        var anchor = document.querySelector('a[href="#section_3"]')
+        var target = document.getElementById('section_3')
+        anchor.addEventListener('click', function (e) {
+            if (window.scrollTo) {
+                e.preventDefault()
+                window.scrollTo({ 'behavior': 'smooth', 'top': target.offsetTop })
+            }
+        })
+
+
+    </script>
 </body>
 
 </html>
