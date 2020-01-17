@@ -113,9 +113,6 @@
             height: 65px;
         }
 
-        /* .navbar .container {
-            max-width: 820px;
-        } */
 
         .nav-item {
             color: white;
@@ -133,123 +130,27 @@
             }
         }
 
-        /* banner */
-        .banner {
-            margin-top: 65px;
+        /* 商品購物頁面 */
+        /* 01-商品展示頁面 */
+
+        /* 02-獨立商品modal */
+        .modal-header{
+            border-bottom: none;
         }
-
-        .banner .swiper-wrapper {
-            height: 100%;
-            width: 100%;
+        .modal-footer{
+            border-top: none;
         }
-
-        .banner .swiper-slide {
-            width: 100%;
-
+        .modal-title{
+            font-size: 50px;
+            
         }
-
-        .arrow_down {
-            margin: 0 auto;
+        .modal-title-border{
+            width: 50px;
+            border-bottom: 1px solid rgb(229, 35, 45);
         }
-
-
-        /* section_1 */
 
 
 
-        .section_1_house {
-            position: relative;
-            top: -60px;
-            z-index: 9;
-            left: -15px;
-        }
-
-        .section_1_content {
-            padding-left: 40px;
-            margin-top: -142px;
-            position: relative;
-            padding-bottom: 40px;
-            z-index: 10;
-        }
-
-        @media screen and (max-width: 1280px) {
-            .section_1_content {
-                margin-top: -113px;
-            }
-        }
-
-        @media screen and (max-width: 996px) {
-            .section_1_content {
-                margin-top: -101px;
-            }
-        }
-
-        @media screen and (max-width: 576px) {
-            .section_1_content {
-            margin-top: -50px;
-            }
-            .section_1_house {
-            top: -35px;
-            }
-        }
-
-        .section_1 {
-            width: 100%;
-        }
-
-        .section_1 h2 {
-            line-height: 0.7;
-            padding: 57px 0 0 0px;
-        }
-
-        .section_1 h6 {
-            line-height: 0.7;
-            padding: 20px 0 10px 0px;
-            letter-spacing: 5px;
-        }
-
-        .section_1 p {
-            font-size: 35px;
-            letter-spacing: 2.5px;
-            padding-right: 200px;
-        }
-        @media screen and (max-width: 1280px) {
-            .section_1 p {
-            padding-right: 120px;
-        }
-        }
-
-        @media screen and (max-width: 996px) {
-            .section_1 p {
-            padding-right: 60px;
-        }
-        }
-
-        @media screen and (max-width: 576px) {
-            .section_1 p {
-            padding-right: 0px;
-        }
-        }
-
-        .story_image img {
-            width: 100%;
-        }
-
-        .scroll_down {
-            text-align: center;
-        }
-
-        .fa-angle-down {
-            font-size: 80px;
-            color: white;
-        }
-
-        img.section_1_flower {
-            width: 30%;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
 
 
         /* footer */
@@ -297,61 +198,52 @@
         </div>
     </nav>
 
-    <!-- 2.banner -->
-    <div class="banner">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
-                <div class="swiper-slide"><img src="/img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
+    <!-- 2.購物頁面 -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content d-flex flex-row">
+                <div class="col-6 " style="padding-left: 0px;">
+                    <img src="./img/04-購物頁面/shopping_bg.png" alt="" style="width: 100%;">
+                </div>
+                <div class="col-6">
+                    <!-- modal關閉的按鈕 -->
+                    <div class="modal-body">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            
+                        </div>
+                        <div class="modal-body">
+
+                            <h3 class="modal-title color_r ">經典原味</h3>
+                            <div class="modal-title-border"></div>
+                            <p>外層酥脆，內層濕潤鬆軟，扎實的口感，彷彿置身英國，品嚐正統的英式下午茶點心，享受午后悠閒時光。</p>
+                            <p>成&nbsp;分:</p>
+                            <p>中筋麵粉、牛奶、雞蛋</p>
+                            <p>營養標示:</p>
+                            <p>熱量0000大卡</p>
+                            <p>蛋白質0000公克</p>
+                            <p>脂肪0000公克</p>
+                            <p>糖0000公克</p>
+                            <p>鈉0000毫克</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-lg">立即購買</button>
+                    </div>
+                </div>
             </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
     </div>
 
-    <!-- 3.main -->
-    <main>
-        <!-- 3-1 品牌故事section_1 -->
-        <section class="section_1">
-            <img class="section_1_house col-6" src="/img/01-index/02-品牌故事/house.png" alt="">
-            <div class="section_1_content bgcolor_b">
-
-                <h2 class="title color_Beige">品牌 故事</h2>
-                <h6 class="subtitle color_Beige">司康鬆餅最早起源地是葡萄牙</h6>
-                <div class="row">
-                    <div class="story_image col-11 col-md-4">
-                        <img class="section1_top_img" src="./img/02-關於我們/01-品牌故事/01-box.png" alt="">
-                    </div>
-                    <div class="col-11 col-md-7 color_w">
-                        <p>旅居英國近三十年，將英式傳統下午茶風味引進台灣。堅持以純手工打造的英式下午茶點心。灰色調倫敦天氣，典雅的飲茶文化，講話有讓人羨慕的英式口音的台灣店長熱情待人友善也注重禮儀，特別喜歡與朋友們分享親手烹調的美食、生活大小故事，重視與家人好友聚在一起的時光...
-                            <a href="">
-                                < more >
-                            </a>
-                        </p>
-
-                    </div>
-                </div>
-
-
-
-                <div class="scroll_down">
-                    <a href="">
-                        <img class="arrow_down" src="./img/01-index/02-品牌故事/down.png" alt="">
-                    </a>
-                </div>
-                <img class="section_1_flower" src="./img/01-index/02-品牌故事/品牌flower-01.png" alt="">
-
-
-
-            </div>
-        </section>
-
-    </main>
 
 
 
