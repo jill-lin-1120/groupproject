@@ -134,7 +134,7 @@
         /* 01-商品展示頁面 */
 
         /* 02-獨立商品modal */
-        .modal-bg{
+        .modal-bg {
             background-image: url(./img/04-購物頁面/02-modal/shopping_bg.png);
             background-size: cover;
             background-repeat: no-repeat;
@@ -203,13 +203,19 @@
             align-self: flex-end;
             margin-bottom: 50px;
         }
-        input{
+
+        input {
             margin-bottom: 35px;
-            
+
         }
-        label{
+
+        label {
             display: block;
             margin-bottom: -35px;
+        }
+
+        .card {
+            border: none;
         }
 
 
@@ -273,7 +279,7 @@
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content d-flex flex-row">
                 <div class="col-6 modal-bg d-flex justify-content-center align-items-center" style="padding-left: 0px;">
-                   <img class="modal-img" src="./img/04-購物頁面/02-modal/原味.png" alt="">
+                    <img class="modal-img" src="./img/04-購物頁面/02-modal/原味.png" alt="">
                 </div>
                 <div class="col-6">
                     <!-- modal關閉的按鈕 -->
@@ -289,6 +295,16 @@
                             <h3 class="modal-title color_r ">經典原味</h3>
                             <div class="modal-title-border"></div>
                             <p>外層酥脆，內層濕潤鬆軟，扎實的口感，彷彿置身英國，品嚐正統的英式下午茶點心，享受午后悠閒時光。</p>
+                            <p>成&emsp;&emsp;分
+                                <a class="btn btn_collapse" data-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    +
+                                </a></p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <p>中筋麵粉、牛奶、雞蛋</p>
+                                </div>
+                            </div>
                             <p>成&emsp;&emsp;分：中筋麵粉、牛奶、雞蛋</p>
 
                             <p>營養標示：</p>
@@ -302,7 +318,7 @@
                             <div class="d-flex justify-content-around">
                                 <!-- 加減按鈕 -->
                                 <form id='myform' method='POST' action='#'>
-                                    <label >
+                                    <label>
                                         <p>數量：</p>
                                     </label>
                                     <input type='button' value='-' class='qty_btn qtyminus' field='quantity' />
@@ -380,6 +396,21 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+        // 摺疊按鈕
+        var btn_collapse = document.querySelector('.btn_collapse')
+        // btn_collapse.onclick = function () {
+
+        //     btn_collapse.innerHTML = '-'
+
+
+        // }
+        $('#collapseExample').on('show.bs.collapse', function () {
+            btn_collapse.innerHTML = '-'
+        })
+        $('#collapseExample').on('hide.bs.collapse', function () {
+            btn_collapse.innerHTML = '+'
+        })
 
         // 數量加減按鈕
         $(function () {

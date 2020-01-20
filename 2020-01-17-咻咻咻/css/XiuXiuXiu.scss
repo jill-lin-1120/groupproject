@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 150vh;
+    padding-bottom: 50vh;
+}
+
+.all {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    overflow: hidden;
+
+    @media (max-width:576px) {
+        height: 100vh;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .title {
+        flex: 5;
+        padding-top: 10vh;
+        padding-left: 10%;
+
+        @media (max-width:992px) {
+            padding-top: 12vh;
+        }
+
+        @media (max-width:576px) {
+            flex: unset;
+            width: 100%;
+            height: 13%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .title_name,
+        .title_main {
+            margin: 0;
+            font-size: 3.5em;
+            letter-spacing: 2px;
+
+            @media (max-width:1345px) {
+                font-size: 2.5em;
+            }
+
+            @media (max-width:1024px) {
+                font-size: 2em;
+            }
+
+            @media (max-width:992px) {
+                font-size: 1.5em;
+            }
+            @media (max-width:576px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .all_a {
+        flex: 4;
+        height: 100%;
+        position: relative;
+
+        @media (max-width:576px) {
+            flex: unset;
+            width: 100%;
+            height: 29%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        &.addcls {
+            animation-name: aaa;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-duration: 0.5S;
+        }
+
+        &.addcls_2 {
+            animation-name: bbb;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-duration: 0.5S;
+        }
+
+        @keyframes aaa {
+            from {
+                transform: translateX(350%);
+            }
+
+            to {
+                transform: translateX(0%);
+            }
+        }
+
+
+
+        @keyframes bbb {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(350%);
+            }
+        }
+
+        .all_1_box,
+        .all_2_box,
+        .all_3_box {
+            width: 100%;
+            height: 100%;
+            transform: skewX(-20deg);
+            @media (max-width:576px) {
+                transform: skewX(0deg);
+            }
+        }
+
+        .all_1_img,
+        .all_2_img,
+        .all_3_img {
+            position: absolute;
+            left: -5%;
+            top: 15%;
+            z-index: 6;
+            height: 70%;
+
+            // RWD商品修改高度height
+            @media (max-width:1024px) {
+                top: 18%;
+                height: 60%;
+            }
+
+            @media (max-width:992px) {
+                top: 20%;
+                height: 50%;
+            }
+
+            @media (max-width:768px) {
+                top: 22%;
+                height: 45%;
+            }
+            @media (max-width:576px) {
+                height: 70%;
+                transform: translate(-50%,-50%);
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
+
+    .all_1 {
+        animation-delay: 1s;
+
+        .all_1_box {
+            background-color: #1e2b58;
+        }
+    }
+
+    .all_2 {
+        animation-delay: 0.5s;
+
+        .all_2_box {
+            background-color: #e5202d;
+        }
+    }
+
+    .all_3 {
+        background: linear-gradient(90deg, #e5202d01 50%, #333 0%);
+        @media (max-width:576px) {
+            background: unset;
+        }
+
+        .all_3_box {
+            background-color: #333;
+        }
+    }
+}
