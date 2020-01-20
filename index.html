@@ -17,6 +17,9 @@
     <!-- AOS.js -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- xiuxiuxiu's css -->
+    <link rel="stylesheet" href="./css/XiuXiuXiu.css">
+
 
     <title>Hello, world!</title>
     <style>
@@ -95,23 +98,10 @@
 
         }
 
-        h2 {
-            font-size: 57px;
-            line-height: 0.7;
-            padding-top: 57px;
-        }
-
         .arrow_down {
             width: 80px;
         }
 
-        .title {
-            font-size: 60px;
-        }
-
-        .subtitle {
-            font-size: 20px;
-        }
 
 
 
@@ -121,9 +111,7 @@
             height: 65px;
         }
 
-        /* .navbar .container {
-            max-width: 820px;
-        } */
+
 
         .nav-item {
             color: white;
@@ -161,7 +149,7 @@
         }
 
 
-        /* section_1 */
+        /* section_1 品牌故事*/
 
 
 
@@ -194,10 +182,11 @@
 
         @media screen and (max-width: 576px) {
             .section_1_content {
-            margin-top: -50px;
+                margin-top: -50px;
             }
+
             .section_1_house {
-            top: -35px;
+                top: -35px;
             }
         }
 
@@ -205,42 +194,95 @@
             width: 100%;
         }
 
-        .section_1 h2 {
+        
+        
+
+        .section_1 .title {
+            font-size: 60px;
             line-height: 0.7;
-            padding: 57px 0 0 0px;
+            padding: 57px 0 0 5%;
         }
+        @media screen and (max-width: 996px) {
+            .section_1 .title {
+            font-size: 52px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .section_1 .title {
+            padding: 57px 0 0 0;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .section_1 .title {
+            font-size: 48px;
+            }
+        }
+
+        .section_1 .subtitle {
+            font-size: 20px;
+            padding-left: 5%;
+        }
+        @media screen and (max-width: 768px) {
+            .section_1 .subtitle {
+            padding-left:0;
+            }
+        }
+
+
 
         .section_1 h6 {
             line-height: 0.7;
             padding: 20px 0 10px 0px;
             letter-spacing: 5px;
         }
+        @media screen and (max-width: 576px) {
+            .section_1 h6 {
+            letter-spacing: 2px;
+        }
+        }
 
         .section_1 p {
             font-size: 35px;
             letter-spacing: 2.5px;
-            padding-right: 200px;
+            padding-right: 20%;
         }
+
+        @media screen and (max-width: 1600px) {
+            .section_1 p {
+                font-size: 30px;
+            }
+        }
+
         @media screen and (max-width: 1280px) {
             .section_1 p {
-            padding-right: 120px;
-        }
+                font-size: 26px;
+                padding-right: 10%;
+            }
         }
 
         @media screen and (max-width: 996px) {
             .section_1 p {
-            padding-right: 60px;
-        }
+                padding-right: 8%;
+                font-size: 20px;
+            }
         }
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
             .section_1 p {
-            padding-right: 0px;
+                padding-right: 0px;
+            }
         }
-        }
+
+      
 
         .story_image img {
             width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            .story_image img {
+            width: 80%;
+            padding-top: 10%;
+            }
         }
 
         .scroll_down {
@@ -259,7 +301,12 @@
             bottom: 0;
         }
 
-        /* section_2 */
+        /* section_2 食用巧思*/
+        @media screen and (max-width: 996px) {
+            .section_2 .title {
+            font-size: 52px;
+            }
+        }
 
         .section_2_contain {
             padding-top: 20px;
@@ -275,6 +322,9 @@
             /* text-decoration: underline; */
             margin: 0;
         }
+        .process_img{
+            width: 90%;
+        }
 
 
         .text_line {
@@ -285,75 +335,28 @@
             margin-bottom: 30px;
 
         }
-
-        /* section_3 */
-        .section_3 {
-            font-size: 60px;
-            padding: 30px 0;
-            padding-left: 30px;
+        @media screen and (max-width: 996px) {
+            .text_line {
+                width: 230px;
+            }
+            .section_2 .col-5{
+                padding-right: 0px;
+            }
+            .section_2 .col-7{
+                padding-right: 0px;
+            }
+            .section_2 .col-9{
+                padding-right: 0px;
+            }
         }
-
-        .section_3_title {
-            padding: 150px 70px;
-            padding-right: 0px;
+        @media screen and (max-width: 767px) {
+            .section_2_R_img{
+            display: none;
+            }
         }
+        
 
-        .section_3_title p {
-            line-height: 80px;
-        }
-
-        .section_3_img{
-            position: relative;
-        }
-
-        .section_3_img p{
-            font-size: 40px;
-        }
-
-        .img_box {
-            width: 100%;
-            /* position: relative; */
-            clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
-            z-index: 1;
-        }
-
-        .img_box02 {
-            width: 100%;
-            clip-path: polygon(50% 0, 100% 0%, 100% 100%, 33% 100%);
-            z-index: 2;
-            /* position: relative; */
-
-        }
-
-        .img_box03 {
-            width: 100%;
-            clip-path: polygon(80% 0, 100% 0%, 100% 100%, 65% 100%);
-            z-index: 3;
-        }
-
-        .img_product01 {
-            width: 20%;
-            position: absolute;
-            top: 25%;
-            left: 8%;
-            z-index: 5;
-        }
-
-        .img_product02 {
-            width: 220px;
-            position: absolute;
-            top: 25%;
-            left: 40%;
-            z-index: 5;
-        }
-
-        .img_product03{
-            width: 420px;
-            position: absolute;
-            top: 5%;
-            left: 63%;
-            z-index: 5;
-        }
+        /* section_3 銷售商品(咻咻咻)*/
 
 
         /* footer */
@@ -408,7 +411,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
                 <div class="swiper-slide"><img src="./img/01-index/01-banner/banner.jpg" alt="" width="100%"></div>
-                
+
 
             </div>
             <!-- Add Arrows -->
@@ -428,14 +431,17 @@
                 <h6 class="subtitle color_Beige">司康鬆餅最早起源地是葡萄牙</h6>
                 <div class="row">
                     <div class="story_image col-11 col-md-4">
-                        <div data-aos="fade-up"><img class="section1_top_img" src="./img/02-關於我們/01-品牌故事/01-box.png" alt=""></div>
+                        <div data-aos="fade-up" class="d-flex justify-content-center">
+                            <img class="section1_top_img" src="./img/02-關於我們/01-品牌故事/01-box.png"
+                                alt="">
+                        </div>
 
-                        
+
                     </div>
                     <div class="col-11 col-md-7 color_w">
                         <p>旅居英國近三十年，將英式傳統下午茶風味引進台灣。堅持以純手工打造的英式下午茶點心。灰色調倫敦天氣，典雅的飲茶文化，講話有讓人羨慕的英式口音的台灣店長熱情待人友善也注重禮儀，特別喜歡與朋友們分享親手烹調的美食、生活大小故事，重視與家人好友聚在一起的時光...
                             <a href="">
-                                < more >
+                                < more>
                             </a>
                         </p>
 
@@ -463,7 +469,7 @@
                     <div class="col-9 d-flex section_2_LM">
                         <div class="col-5">
                             <div>
-                                <p class="d-flex justify-content-center">食用&nbsp;巧思</p>
+                                <p class="d-flex justify-content-center title">食用&nbsp;巧思</p>
                                 <div class="text_line"></div>
                             </div>
                             <div class="d-flex justify-content-center">
@@ -472,59 +478,39 @@
 
                         </div>
                         <div class="col-7 d-flex align-items-center">
-                            <div class="section_2_M d-flex justify-content-first align-items-end">
-                                <img width="90%" src="./img/01-index/03-食用巧思/食用流程.png" alt="">
+                            <div class="section_2_M d-flex justify-content-center align-items-end">
+                                <img class="process_img"  src="./img/01-index/03-食用巧思/食用流程.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-3 d-flex justify-content-end align-items-end">
                         <div class="section_2_R d-flex justify-content-end align-items-end">
-                            <img width="110%" src="./img/01-index/03-食用巧思/食用插圖.png" alt="">
+                            <img class="section_2_R_img" width="110%" src="./img/01-index/03-食用巧思/食用插圖.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3-2 銷售商品section_3 -->
-        <section class="section_3">
-            <div class="h-100">
-                <div class="d-flex justify-content-between h-100">
-                    <div class=" section_3_title flex-grow-1">
-                        <!-- flex-grow-1 -->
-                        <p class="">銷售&nbsp;商品 <br>Our&nbsp;Products</p>
-                    </div>
-
-                    <div class="d-flex section_3_img w-100">
-
-                        <div class="img_product01" data-aos="fade-left" data-aos-delay="1000" data-aos-anchor-placement="center-center">
-                            <img width="100%" src="./img/01-index/04-銷售商品/01-產品.png" alt="">
-                        </div>
-                        <div class="img_product02 color_w" data-aos="fade-left" data-aos-delay="2000" data-aos-anchor-placement="top-center">
-                            <img width="100%" src="./img/01-index/04-銷售商品/02-產品.png" alt="">
-                            <p>果醬的魅力</p>
-                        </div>
-
-                        <div class="img_product03 color_w d-flex flex-wrap justify-content-center" data-aos="fade-left" data-aos-delay="3000" data-aos-anchor-placement="top-center">
-                            <p>濃郁花茶香</p>
-                            <img width="100%" src="./img/01-index/04-銷售商品/03-產品.png" alt="">
-                        </div>
-
-
-                        <div class="img_box bgcolor_b" data-aos="fade-left" data-aos-delay="100000" data-aos-anchor-placement="top-center">
-                            
-                            <div class="img_box02 bgcolor_r h-100" data-aos="fade-left" data-aos-delay="100000" data-aos-anchor-placement="top-center">
-                                <div class="img_box03 bgcolor_bg h-100" data-aos="fade-left" data-aos-delay="100000" data-aos-anchor-placement="top-center">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
+        <!-- 3-3 銷售商品(咻咻咻)section_3 -->
+        <div class="section3">
+            <div class="title">
+                <div class="title_name">銷售商品</div>
+                <div class="title_main">Our&nbsp;Products</div>
             </div>
-        </section>
+            <div class="section3_a section3_1">
+                <div class="section3_1_box"></div>
+                <img class="section3_1_img" src="./img/01-index/04-銷售商品/01-產品.png" alt="">
+            </div>
+            <div class="section3_a section3_2">
+                <div class="section3_2_box"></div>
+                <img class="section3_2_img" src="./img/01-index/04-銷售商品/02-產品.png" alt="">
+            </div>
+            <div class="section3_a section3_3">
+                <div class="section3_3_box"></div>
+                <img class="section3_3_img" src="./img/01-index/04-銷售商品/03-產品.png" alt="">
+            </div>
+        </div>
 
     </main>
 
@@ -590,6 +576,58 @@
             },
         });
 
+
+        //section3 xiuxiuxiu
+
+        var alltop = document.querySelector('.section3');
+        var mywindow = window;
+        var prevScroll = mywindow.pageYOffset;
+        var section3_as = document.querySelectorAll('.section3_a');
+
+        function removeAddcls() {
+            section3_as.forEach(section3_a => {
+                section3_a.classList.remove('addcls');
+            });
+        }
+
+        function removeAddcls_2() {
+            section3_as.forEach(section3_a => {
+                section3_a.classList.remove('addcls_2');
+            });
+        }
+
+        mywindow.addEventListener('scroll', scrollBlock);
+
+        function scrollBlock() {
+            var oScroll_1 = document.documentElement.scrollTop;
+            var section3_1 = document.querySelector('.section3_1');
+            var section3_2 = document.querySelector('.section3_2');
+            var section3_3 = document.querySelector('.section3_3');
+            var oall = Number(alltop.offsetTop);
+            var oallblock = oall - 500;
+            if (oScroll_1 > oallblock) {
+                var oScroll = mywindow.pageYOffset;
+                if (prevScroll > oScroll) {
+                    removeAddcls()
+                    section3_as.forEach(section3_a => {
+                        section3_a.style.transform = 'translateX(0%)';
+                    });
+                    section3_1.classList.add('addcls_2');
+                    section3_2.classList.add('addcls_2');
+                    section3_3.classList.add('addcls_2');
+
+                } else {
+                    removeAddcls_2()
+                    section3_as.forEach(section3_a => {
+                        section3_a.style.transform = 'translateX(350%)';
+                    });
+                    section3_1.classList.add('addcls');
+                    section3_2.classList.add('addcls');
+                    section3_3.classList.add('addcls');
+                }
+                prevScroll = oScroll;
+            }
+        }
 
 
 
