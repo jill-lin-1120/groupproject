@@ -150,6 +150,7 @@
 
         .products_background {
             background-image: url('./img/04-購物頁面/01-products/01-background.png');
+            background-repeat: repeat;
         }
 
         .title h2 {
@@ -197,7 +198,7 @@
         }
 
         /* 商品卡片 */
-        .card {
+        .products_item .card {
             background-color: transparent;
             margin: 0 0 30px 0;
         }
@@ -255,6 +256,32 @@
             margin-bottom: 40px;
         }
 
+        @media screen and (max-width: 1200px) {
+            .modal-title-border {
+                width: 360px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .modal-title-border {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .modal-img {
+                width: 90%;
+            }
+        }
+
+
+        @media (min-width: 576px) {
+            .modal-dialog {
+                max-width: 90%;
+            }
+        }
+
+
+
         .modal-body {
             padding: 0;
         }
@@ -263,6 +290,13 @@
             font-size: 25px;
             letter-spacing: 4px;
         }
+        @media (min-width: 778px) {
+            .modal-dialog {
+                font-size: 16px;
+            }
+        }
+        
+
 
         .modal-footer button {
             font-size: 25px;
@@ -309,8 +343,8 @@
             margin-bottom: -35px;
         }
 
-        .collapse.card {
-            border: none;
+        .collapse .card {
+            border: 0px;
         }
 
         /* tabs */
@@ -328,10 +362,135 @@
             pointer-events: all;
             height: auto;
         }
+
         .tabs {
             cursor: pointer;
         }
-    
+
+        @media screen and (max-width: 1200px) {
+            .card-title {
+                font-size: 30px;
+                color: rgb(247, 146, 30);
+            }
+
+            .card-text {
+                font-size: 20px;
+            }
+
+            input {
+                width: 50px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+
+            input {
+                width: 100px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .products_item .card {
+                background-color: rgb(30, 43, 88);
+
+            }
+
+            input {
+                width: 180px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .category_image {
+                width: 370px;
+            }
+
+            .category_image img {
+                width: 350px;
+            }
+
+            .category_image .classify {
+                top: 18px;
+                left: 10px;
+                font-size: 30px;
+            }
+
+            .category_image .tabs {
+                font-size: 22px;
+            }
+
+            .category_image .tab1 {
+                top: 18px;
+                left: 105px;
+            }
+
+            .category_image .tab2 {
+                top: 18px;
+                left: 200px;
+            }
+
+            .category_image .tab3 {
+                top: 18px;
+                left: 290px;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .category_image .classify {
+                top: 18px;
+                left: 8px;
+                font-size: 30px;
+            }
+
+            .category_image .tab1 {
+                top: 18px;
+                left: 100px;
+            }
+
+            .category_image .tab2 {
+                top: 18px;
+                left: 200px;
+            }
+
+            .category_image .tab3 {
+                top: 18px;
+                left: 290px;
+            }
+
+        }
+
+        @media screen and (max-width: 375px) {
+            .category_image {
+                width: 300px;
+            }
+
+            .category_image img {
+                width: 300px;
+            }
+
+            .category_image .classify {
+                top: 11px;
+                left: 6px;
+                font-size: 25px;
+            }
+
+            .category_image .tab1 {
+                top: 11px;
+                left: 85px;
+            }
+
+            .category_image .tab2 {
+                top: 11px;
+                left: 165px;
+            }
+
+            .category_image .tab3 {
+                top: 11px;
+                left: 245px;
+            }
+
+        }
+
         /* footer */
         .foot_top {
             height: 14px;
@@ -396,7 +555,7 @@
                         <div class="tabs_contents">
                             <div class="products_list active">
                                 <div class="row">
-                                    <div class="products_item col-4">
+                                    <div class="products_item col-lg-4 col-md-6">
                                         <div class="card">
                                             <a href="" data-toggle="modal" href="#collapseExample"
                                                 data-target="#exampleModal" role="button" aria-expanded="false"
@@ -404,8 +563,7 @@
                                                     src="./img/04-購物頁面/01-products/scone1.png" class="card-img-top"
                                                     alt="..."></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">原味經典<span class="color_w"> &emsp; &emsp;
-                                                        數量(盒)</span>
+                                                <h5 class="card-title">原味經典(盒)
                                                 </h5>
                                                 <p class="card-text color_r">價格(NT): &emsp;220元&emsp;<input
                                                         type="number" value=1></p>
@@ -414,7 +572,7 @@
                                                     class="btn btn-danger btn-lg">加入購物車</a></div>
                                         </div>
                                     </div>
-                                    <div class="products_item col-4">
+                                    <div class="products_item col-lg-4 col-md-6">
                                         <div class="card">
                                             <a href="" data-toggle="modal" href="#collapseExample"
                                                 data-target="#exampleModal" role="button" aria-expanded="false"
@@ -422,7 +580,7 @@
                                                     src="./img/04-購物頁面/01-products/scone2.png" class="card-img-top"
                                                     alt="..."></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">蔓越莓口味<span class="color_w"> &emsp; 數量(盒)</span>
+                                                <h5 class="card-title">蔓越莓口味(盒)
                                                 </h5>
                                                 <p class="card-text color_r">價格(NT): &emsp;220元&emsp;<input
                                                         type="number" value=1></p>
@@ -431,7 +589,7 @@
                                                     class="btn btn-danger btn-lg">加入購物車</a></div>
                                         </div>
                                     </div>
-                                    <div class="products_item col-4">
+                                    <div class="products_item col-lg-4 col-md-6">
                                         <div class="card">
                                             <a href="" data-toggle="modal" href="#collapseExample"
                                                 data-target="#exampleModal" role="button" aria-expanded="false"
@@ -439,7 +597,7 @@
                                                     src="./img/04-購物頁面/01-products/scone3.png" class="card-img-top"
                                                     alt="..."></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">葡萄乾口味<span class="color_w"> &emsp; 數量(盒)</span>
+                                                <h5 class="card-title">葡萄乾口味(盒)
                                                 </h5>
                                                 <p class="card-text color_r">價格(NT): &emsp;220元&emsp;<input
                                                         type="number" value=1></p>
@@ -453,7 +611,7 @@
 
                             <div class="products_list">
                                 <div class="row">
-                                    <div class="products_item col-4">
+                                    <div class="products_item col-lg-4 col-md-6">
                                         <div class="card">
                                             <a href="" data-toggle="modal" href="#collapseExample"
                                                 data-target="#exampleModal" role="button" aria-expanded="false"
@@ -461,8 +619,7 @@
                                                     src="./img/04-購物頁面/01-products/jam1.png" class="card-img-top"
                                                     alt="..."></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">經典果醬<span class="color_w"> &emsp; &emsp;
-                                                        數量(盒)</span>
+                                                <h5 class="card-title">經典果醬(罐)
                                                 </h5>
                                                 <p class="card-text color_r">價格(NT): &emsp;100元&emsp;<input
                                                         type="number" value=1></p>
@@ -471,7 +628,7 @@
                                                     class="btn btn-danger btn-lg">加入購物車</a></div>
                                         </div>
                                     </div>
-                                    <div class="products_item col-4">
+                                    <div class="products_item col-lg-4 col-md-6">
                                         <div class="card">
                                             <a href="" data-toggle="modal" href="#collapseExample"
                                                 data-target="#exampleModal" role="button" aria-expanded="false"
@@ -479,7 +636,7 @@
                                                     src="./img/04-購物頁面/01-products/jam2.png" class="card-img-top"
                                                     alt="..."></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">黑櫻桃果醬<span class="color_w"> &emsp; 數量(盒)</span>
+                                                <h5 class="card-title">黑櫻桃果醬(罐)
                                                 </h5>
                                                 <p class="card-text color_r">價格(NT): &emsp;100元&emsp;<input
                                                         type="number" value=1></p>
@@ -491,9 +648,9 @@
                                 </div>
                             </div>
 
-                            <div  class="products_list">
+                            <div class="products_list">
                                 <div class="row">
-                                    <div class="products_item col-4">
+                                    <div class="products_item col-lg-4 col-md-6">
                                         <div class="card">
                                             <a href="" data-toggle="modal" href="#collapseExample"
                                                 data-target="#exampleModal" role="button" aria-expanded="false"
@@ -501,7 +658,7 @@
                                                     src="./img/04-購物頁面/01-products/tea.png" class="card-img-top"
                                                     alt="..."></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">經典伯爵紅茶<span class="color_w"> 數量(盒)</span></h5>
+                                                <h5 class="card-title">經典伯爵紅茶(盒)</h5>
                                                 <p class="card-text color_r">價格(NT): &emsp;220元&emsp;<input
                                                         type="number" value=1></p>
                                             </div>
@@ -538,30 +695,34 @@
                                     <h3 class="modal-title color_r ">經典原味</h3>
                                     <div class="modal-title-border"></div>
                                     <p>外層酥脆，內層濕潤鬆軟，扎實的口感，彷彿置身英國，品嚐正統的英式下午茶點心，享受午后悠閒時光。</p>
-                                    <p>成&emsp;&emsp;分
-                                        <a class="btn btn_collapse" data-toggle="collapse" href="#collapseExample"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            +
-                                        </a></p>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card card-body">
-                                            <p>中筋麵粉、牛奶、雞蛋</p>
-                                        </div>
-                                    </div>
-                                    <p>成&emsp;&emsp;分：中筋麵粉、牛奶、雞蛋</p>
+                                    <p>成&emsp;&emsp;分：
 
-                                    <p>營養標示：</p>
-                                    <p>&emsp;&emsp;&emsp;&emsp;熱量&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;大卡</p>
-                                    <p>&emsp;&emsp;&emsp;&emsp;蛋白質&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克</p>
-                                    <p>&emsp;&emsp;&emsp;&emsp;脂肪&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克</p>
-                                    <p>&emsp;&emsp;&emsp;&emsp;糖&emsp;&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;公克
-                                    </p>
-                                    <p>&emsp;&emsp;&emsp;&emsp;鈉&emsp;&emsp;&emsp;&emsp;&emsp;0000&emsp;&emsp;&emsp;毫克
                                     </p>
 
+                                    <p>中筋麵粉、牛奶、雞蛋</p>
 
-                                    <div class="d-flex justify-content-around">
-                                        <!-- 加減按鈕 -->
+                                    <p>營養標示：
+
+                                    </p>
+
+                                    <p>熱量&emsp;&emsp;0000&emsp;大卡
+                                    </p>
+                                    <p>蛋白質&emsp;0000&emsp;公克</p>
+                                    <p>脂肪&emsp;&emsp;0000&emsp;公克
+                                    </p>
+                                    <p>糖&emsp;&emsp;&emsp;0000&emsp;公克
+                                    </p>
+                                    <p>鈉&emsp;&emsp;&emsp;0000&emsp;毫克
+                                    </p>
+
+
+
+
+
+
+                                    <!-- 加減按鈕 -->
+                                    <!-- <div class="d-flex justify-content-around">
+                                       
                                         <form id='myform' method='POST' action='#'>
                                             <label>
                                                 <p>數量：</p>
@@ -571,7 +732,7 @@
                                             <input type='button' value='+' class='qty_btn qtyplus' field='quantity' />
                                         </form>
                                         <button type="button" class="btn btn_buy bgcolor_r color_w">立即購買</button>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -641,20 +802,7 @@
             },
         });
 
-        // 摺疊按鈕
-        var btn_collapse = document.querySelector('.btn_collapse')
-        // btn_collapse.onclick = function () {
 
-        //     btn_collapse.innerHTML = '-'
-
-
-        // }
-        $('#collapseExample').on('show.bs.collapse', function () {
-            btn_collapse.innerHTML = '-'
-        })
-        $('#collapseExample').on('hide.bs.collapse', function () {
-            btn_collapse.innerHTML = '+'
-        })
 
         // 數量加減按鈕
         $(function () {
