@@ -50,4 +50,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.modal-dialog {
+  max-width: 70%;
+}
 /*# sourceMappingURL=news.css.map */
