@@ -204,7 +204,7 @@
             margin-bottom: 50px;
         }
 
-        input {
+        #myform input {
             margin-bottom: 35px;
 
         }
@@ -214,13 +214,9 @@
             margin-bottom: -35px;
         }
 
-        .card {
+        .collapse.card {
             border: none;
         }
-
-
-
-
 
         /* footer */
         .foot_top {
@@ -269,9 +265,12 @@
 
     <!-- 2.購物頁面 -->
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Launch demo modal
-    </button>
+    </button>    -->
+    <a class="btn btn-primary" data-toggle="modal" href="#collapseExample" data-target="#exampleModal" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -327,9 +326,6 @@
                                 </form>
                                 <button type="button" class="btn btn_buy bgcolor_r color_w">立即購買</button>
                             </div>
-
-
-
                         </div>
                     </div>
 
